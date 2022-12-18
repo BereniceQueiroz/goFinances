@@ -3,6 +3,7 @@ import AppLoading from "expo-app-loading"
 import { ThemeProvider } from 'styled-components';
 import { Dashboard } from '~/screens/Dashboard';
 import { Register } from '~/screens/Register';
+import { CategorySelect } from '~/screens/CategorySelect';
 import {
   useFonts,
   Poppins_400Regular,

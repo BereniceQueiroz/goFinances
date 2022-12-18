@@ -1,13 +1,13 @@
 import React from "react";
 
-import { 
-  Container, 
-  Header, 
-  Title, 
-  Icon, 
-  Content, 
-  Amount, 
-  LastTransaction 
+import {
+  Container,
+  Header,
+  Title,
+  Icon,
+  Content,
+  Amount,
+  LastTransaction
 } from "./styles";
 
 interface Props {

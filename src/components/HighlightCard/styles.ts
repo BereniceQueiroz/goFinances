@@ -46,7 +46,7 @@ export const Icon = styled(Feather)<TypeProps>`
 export const Content = styled.View``;
 
 export const Amount = styled.Text<TypeProps>`
-  font-size: ${RFValue(32)}px; 
+  font-size: ${RFValue(32)}px;
   font-family: ${({ theme }) => theme.fonts.medium};
   line-height: 48px;
   color: ${({ theme, type }) => type === "total" ? theme.colors.shape : theme.colors.title};
