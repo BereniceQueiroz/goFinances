@@ -1,9 +1,7 @@
 import React from 'react';
 import AppLoading from "expo-app-loading"
 import { ThemeProvider } from 'styled-components';
-import { Dashboard } from '~/screens/Dashboard';
-import { Register } from '~/screens/Register';
-import { CategorySelect } from '~/screens/CategorySelect';
+import  { AppRoutes} from '~/routes/app.routes';
 import {
   useFonts,
   Poppins_400Regular,
@@ -12,6 +10,9 @@ import {
 } from '@expo-google-fonts/poppins';
 
 import theme from "~/global/styles/theme";
+import { NavigationContainer } from '@react-navigation/native';
+import 'react-native-gesture-handler';
+import { GestureHandlerRootView } from 'react-native-gesture-handler'
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -26,8 +27,15 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      {/* <Dashboard /> */}
-      <Register />
+      <GestureHandlerRootView
+        style={{
+          flex: 1,
+          backgroundColor: theme.colors.background,
+        }}>
+      <NavigationContainer>
+        <AppRoutes />
+      </NavigationContainer>
+      </GestureHandlerRootView>
     </ThemeProvider>
   )
 }
