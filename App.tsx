@@ -1,4 +1,7 @@
 import React from 'react';
+import 'react-native-gesture-handler';
+import 'intl';
+import 'intl/locale-data/jsonp/pt-BR';
 import AppLoading from "expo-app-loading"
 import { ThemeProvider } from 'styled-components';
 import  { AppRoutes} from '~/routes/app.routes';
@@ -11,7 +14,7 @@ import {
 
 import theme from "~/global/styles/theme";
 import { NavigationContainer } from '@react-navigation/native';
-import 'react-native-gesture-handler';
+
 import { GestureHandlerRootView } from 'react-native-gesture-handler'
 
 export default function App() {

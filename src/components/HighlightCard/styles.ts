@@ -58,3 +58,4 @@ export const LastTransaction = styled.Text<TypeProps>`
   line-height: 18px;
   color: ${({ theme, type }) => type === "total" ? theme.colors.shape : theme.colors.text};
 `;
+
