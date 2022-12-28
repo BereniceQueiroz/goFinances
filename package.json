@@ -19,7 +19,9 @@
     "date-fns": "^2.29.3",
     "expo": "~47.0.8",
     "expo-app-loading": "~2.1.1",
+    "expo-auth-session": "~3.8.0",
     "expo-font": "~11.0.1",
+    "expo-random": "~13.0.0",
     "expo-splash-screen": "~0.17.5",
     "expo-status-bar": "~1.4.2",
     "intl": "^1.2.5",
@@ -61,6 +63,7 @@
     "eslint-plugin-react": "^7.31.11",
     "prettier": "^2.8.1",
     "react-app-rewired": "^2.2.1",
+    "react-native-svg-transformer": "^1.0.0",
     "typescript": ">=4.4"
   },
   "private": true
