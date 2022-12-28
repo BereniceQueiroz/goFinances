@@ -16,6 +16,7 @@
     "@react-navigation/native": "^6.1.1",
     "@types/styled-components": "^5.1.26",
     "@types/styled-components-react-native": "^5.2.0",
+    "date-fns": "^2.29.3",
     "expo": "~47.0.8",
     "expo-app-loading": "~2.1.1",
     "expo-font": "~11.0.1",
