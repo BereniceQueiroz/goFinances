@@ -6,6 +6,12 @@
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "d0c53edd-805c-4172-8906-243b88a72c03"
+      }
+    },
+    "owner": "berenicequeiroz"
   }
 }

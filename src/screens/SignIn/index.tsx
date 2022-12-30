@@ -1,6 +1,7 @@
-import React from 'react';
-import { Alert } from 'react-native';
+import React, { useState } from 'react';
+import { ActivityIndicator, Alert, Platform } from 'react-native';
 import { RFValue } from 'react-native-responsive-fontsize';
+import { useTheme } from "styled-components";
 import {
   Container,
   Header,
@@ -18,14 +19,28 @@ import { useAuth } from '~/hooks/auth';
 
 
 export function SignIn() {
-  const {signInWithGoogle } = useAuth();
+  const [ isLoading, setIsLoading ] = useState(false);
+  const {signInWithGoogle, signInWithApple } = useAuth();
+  const theme = useTheme();
 
   async function handleSignInWithGoogle() {
     try {
-      await signInWithGoogle();
+      setIsLoading(true);
+      return await signInWithGoogle();
     } catch(error) {
       console.error(error);
       Alert.alert('Não foi possível conectar a sua conta Google');
+      setIsLoading(false);
+    }
+  }
+  async function handleSignInWitApple() {
+    try {
+      setIsLoading(true);
+      return await signInWithApple(); //o return serve para parar a busca com o retorno
+    } catch(error) {
+      console.error(error);
+      Alert.alert('Não foi possível conectar a sua conta Apple');
+      setIsLoading(false);
     }
   }
 
@@ -41,15 +56,23 @@ export function SignIn() {
           </Title>
         </TitleWrapper>
         <SignInTitle>
-          Faça seu login  {'\n'}
-          com uma das contas abaixo
+          Faça seu login
         </SignInTitle>
       </Header>
       <Content>
         <WrapperButtons>
           <SignInSocialButton title="Entrar com Google" svg={GoogleSvg} onPress={handleSignInWithGoogle} />
-          <SignInSocialButton title="Entrar com Apple" svg={AppleSvg} />
+          {
+            Platform.OS === 'ios' &&
+            <SignInSocialButton title="Entrar com Apple" svg={AppleSvg} onPress={handleSignInWitApple} />
+          }
         </WrapperButtons>
+        { isLoading &&
+          <ActivityIndicator
+            color={theme.colors.shape}
+            size='small'
+            style={{ marginTop: 18}}
+          /> }
       </Content>
     </Container>
   )

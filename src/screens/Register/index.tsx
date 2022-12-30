@@ -12,6 +12,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as Yup from 'yup';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import uuid from 'react-native-uuid';
+import { useAuth } from '~/hooks/auth';
 import { Button } from '~/components/Form/Button';
 import { InputForm } from '~/components/Form/InputForm';
 import { TransactionTypeButton } from '~/components/Form/TransactionTypeButton';
@@ -26,6 +27,7 @@ import {
   Fields,
   TransactionTypes,
 } from "./styles"
+
 
 interface FormData {
   name: string;
@@ -54,6 +56,7 @@ export function Register() {
     key: 'category',
     name: 'Categoria',
   })
+  const { user} = useAuth();
   const navigation = useNavigation<RegisterNavigationProps>();
 
   const {
@@ -91,7 +94,7 @@ export function Register() {
       date: new Date(),
     }
     try {
-      const dataKey = '@gofinances:transaction';
+      const dataKey = `@gofinances:transactions_user:${user.id}`;
       const data = await AsyncStorage.getItem(dataKey);
       const currentyData = data ? JSON.parse(data) : []; //pegar os dados já salvos na chave, pois o setItem ele sobrescreve
 
