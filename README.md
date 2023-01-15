@@ -11,12 +11,13 @@
 ## 🚀 Tecnologias utilizadas
 
 <ul>
-  <li><a href="https://www.typescriptlang.org/">TypeScript</a></li>
-  <li><a href="https://reactnative.dev/">React Native</a></li>
-  <li><a href="https://styled-components.com/docs/basics">Styled-components</a></li>
-  <li><a href="https://reactnavigation.org/">React-Navigation</a></li>
-  <li>Context Api</a></li>
+  <li>TypeScript</li>
+  <li>React Native</li>
+  <li>Styled-components</li>
+  <li>React-Navigation</li>
+  <li>Context</li>
   <li>React-Hook-Forms</a></li>
+  <li>Yup</li>
   <li>Login Social (Google | iOS)</a></li>
 </ul>
 
