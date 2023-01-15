@@ -33,9 +33,9 @@
 
   git clone <https://github.com/BereniceQueiroz/goFinances>
 
-  # Navegue até a pasta do projeto e baixe as dependências
+  # Instale as dependências
 
-  cd GoFinances-mobile && yarn
+  yarn
 
   # Rode o metro bundler
 
