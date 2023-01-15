@@ -11,6 +11,16 @@
       "resizeMode": "contain",
       "backgroundColor": "#5636D3"
     },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#5636D3"
+      }
+    },
+    "androidNavigationBar": {
+      "backgroundColor": "#5636D3",
+      "barStyle": "light-content"
+    },
     "assetBundlePatterns": [
       "**/*"
     ],
