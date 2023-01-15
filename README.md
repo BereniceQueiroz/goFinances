@@ -1,4 +1,4 @@
-# <h1 align="center" height="300">![Go Finances](.github/logo.png)</h1>
+# ![Go Finances](.github/logo.png)
 
 <h3 align=center>
   Gerencie suas transações de maneira inteligente
