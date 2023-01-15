@@ -15,6 +15,9 @@
   <li><a href="https://reactnative.dev/">React Native</a></li>
   <li><a href="https://styled-components.com/docs/basics">Styled-components</a></li>
   <li><a href="https://reactnavigation.org/">React-Navigation</a></li>
+  <li>Context Api</a></li>
+  <li>React-Hook-Forms</a></li>
+  <li>Login Social (Google | iOS)</a></li>
 </ul>
 
 ## 💻 Rodando a aplicação
