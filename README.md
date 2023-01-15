@@ -1,15 +1,8 @@
-# <h1 align="center">![Go Finances](.github/logo.svg)</h1>
+# <h1 align="center">![Go Finances](.github/logo.png)</h1>
 
 <h3 align=center>
   Gerencie suas transações de maneira inteligente
 </h3>
-
-<h2>Preview do projeto 🚀</h2>
-
-<div align=center>
-  <img width="250" src=".github/gofinances.gif"/>
-</div>
-
 
 <h2>Sobre 🕵️</h2>
 
