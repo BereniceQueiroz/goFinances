@@ -32,8 +32,6 @@ interface IAuthContextData {
   userStorageLoading: boolean;
 }
 
-
-
 const AuthContext = createContext({} as IAuthContextData );
 
 function AuthProvider({children}: AuthProviderProps) {

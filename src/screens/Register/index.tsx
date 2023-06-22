@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import {
   Modal,
   TouchableWithoutFeedback,
@@ -158,6 +158,7 @@ export function Register() {
             </TransactionTypes>
 
             <CategorySelectButton
+              testID='category-button'
               title={category.name}
               onPress={handleOpenModalSelectCategory}
             />
@@ -165,7 +166,7 @@ export function Register() {
           <Button title="Enviar" onPress={handleSubmit(handleRegister)} />
         </Form>
 
-        <Modal visible={categoryModalOpen}>
+        <Modal visible={categoryModalOpen}  testID='modal-category'>
           <CategorySelect
             category={category}
             setCategory={setCategory}
