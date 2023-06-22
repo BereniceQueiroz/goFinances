@@ -16,9 +16,11 @@
   <li>Styled-components</li>
   <li>React-Navigation</li>
   <li>Context</li>
+  <li>Jest</a></li>
   <li>React-Hook-Forms</a></li>
   <li>Yup</li>
   <li>Login Social (Google | iOS)</a></li>
+
 </ul>
 
 ## 💻 Rodando a aplicação
